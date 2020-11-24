@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button class="set">存储数据</button>
+    <button class="get">获取数据</button>
+    <button class="remove">删除数据</button>
+    <button class="clear">清除数据</button>
+
+    <script>
+        // 获取元素
+        let inp = document.querySelector('input');
+        let set = document.querySelector('.set');
+        let get = document.querySelector('.get');
+        let remove = document.querySelector('.remove');
+        let clear= document.querySelector('.clear');
+
+
+        // sessionStorage  操作
+        // 存储数据
+        set.onclick = function () {
+            sessionStorage.setItem("name",inp.value);
+            sessionStorage.setItem("pwd","123456")
+             
+        }
+
+        // 获取数据
+        get.onclick = function () {
+             let res= sessionStorage.getItem("name");
+             console.log(res);
+        }
+
+
+        // 删除数据
+        remove.onclick = function () {
+             sessionStorage.removeItem("name")
+        }
+
+
+        // 删除所有数据
+        clear.onclick = function () {
+             sessionStorage.clear()
+        }
+
+
+
+
+         // loaclStorage 存储数据
+         set.onclick = function () {
+            localStorage.setItem("name",inp.value);
+            localStorage.setItem("pwd","123456")
+             
+        }
+
+        // 获取数据
+        get.onclick = function () {
+             let res= localStorage.getItem("name");
+             console.log(res);
+        }
+
+
+        // 删除数据
+        remove.onclick = function () {
+             localStorage.removeItem("name")
+        }
+
+
+        // 删除所有数据
+        clear.onclick = function () {
+             localtorage.clear()
+        }
+    </script>
+</body>
+</html>
