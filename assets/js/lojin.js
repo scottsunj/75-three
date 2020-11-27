@@ -109,7 +109,7 @@ $(function () {
                     function () {
                     // 关闭之后做的事==》跳转去后台主页
                     location.href = "index.html";
-                  }); 
+                    }); 
 
             }
         })

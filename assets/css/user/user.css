@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 15px;
+   
+}
+.layui-form {
+    /* 输入框的宽度 */
+    width: 500px;
+}
